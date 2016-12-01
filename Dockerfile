@@ -11,5 +11,6 @@ RUN apt-get install -y mosquitto-clients
 #Setting docker port
 EXPOSE 1883
 
+RUN echo `date` > 123.txt
 #Run mosquitto
-ENTRYPOINT ["/usr/sbin/mosquitto"]
+#ENTRYPOINT ["/usr/sbin/mosquitto"]
