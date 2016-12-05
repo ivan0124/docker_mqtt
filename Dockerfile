@@ -11,6 +11,9 @@ RUN apt-get install -y mosquitto-clients
 #Setting docker port
 EXPOSE 1883
 
+#tools
+RUN apt-get install -y sudo git
+
 # adv account
 RUN useradd -m -k /home/adv adv -p adv -s /bin/bash -G sudo
 
