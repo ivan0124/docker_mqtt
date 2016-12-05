@@ -1,7 +1,11 @@
 # How to build docker image
-1. in `docker_mqtt` folder 
+1. method1: go to docker hub to build image:
+
+   https://hub.docker.com/r/ivan0124tw/docker_mqtt/~/settings/automated-builds/
+
+2. method2: self build image in `docker_mqtt` folder 
 <pre>
-$ sudo docker build -t eis/mqtt .
+$ sudo docker build -t ivan0124tw/mqtt .
 </pre>
 
 # How to pull docker images
@@ -12,9 +16,9 @@ $ sudo docker pull ivan0124tw/docker_mqtt
 # How to run docker image
 1. start container. name is `mqtt`
 <pre>
-$ sudo docker run -it --name mqtt eis/mqtt
+$ sudo docker run -it --name mqtt ivan0124tw/mqtt
 or 
-$ sudo docker run -it --name mqtt -v $PWD:/home/adv:rw eis/mqtt
+$ sudo docker run -it --name mqtt -v $PWD:/home/adv:rw ivan0124tw/mqtt
 
 </pre>
 
