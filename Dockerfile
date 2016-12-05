@@ -11,5 +11,8 @@ RUN apt-get install -y mosquitto-clients
 #Setting docker port
 EXPOSE 1883
 
+RUN mkdir /myvol
+RUN echo "hello world" > /myvol/greeting
+VOLUME /myvol
 #Run mosquitto
-ENTRYPOINT ["/usr/sbin/mosquitto"]
+#ENTRYPOINT ["/usr/sbin/mosquitto"]
