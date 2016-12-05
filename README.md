@@ -4,6 +4,11 @@
 $ sudo docker build -t eis/mqtt .
 </pre>
 
+# How to pull docker images
+<pre>
+$ sudo docker pull ivan0124tw/docker_mqtt
+</pre>
+
 # How to run docker image
 1. start container. name is `mqtt`
 <pre>
