@@ -18,7 +18,7 @@ $ sudo docker pull ivan0124tw/docker_mqtt
 <pre>
 $ sudo docker run -it --name docker_mqtt ivan0124tw/docker_mqtt
 or 
-$ sudo docker run -it --name docker_mqtt -v $PWD:/home/adv:rw ivan0124tw/docker_mqtt
+$  sudo docker run -it --name my_mqtt -v $PWD:/home/adv/myvol:rw ivan0124tw/mqtt
 
 </pre>
 
