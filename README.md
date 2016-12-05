@@ -16,18 +16,18 @@ $ sudo docker pull ivan0124tw/docker_mqtt
 # How to run docker image
 1. start container. name is `mqtt`
 <pre>
-$ sudo docker run -it --name mqtt ivan0124tw/mqtt
+$ sudo docker run -it --name docker_mqtt ivan0124tw/docker_mqtt
 or 
-$ sudo docker run -it --name mqtt -v $PWD:/home/adv:rw ivan0124tw/mqtt
+$ sudo docker run -it --name docker_mqtt -v $PWD:/home/adv:rw ivan0124tw/docker_mqtt
 
 </pre>
 
 2. restart container. name is `mqtt`
 <pre>
-$ sudo docker start -ai mqtt
+$ sudo docker start -ai docker_mqtt
 </pre>
 
 3. stop container. name is `mqtt`
 <pre>
-$ sudo docker rm  mqtt
+$ sudo docker rm  docker_mqtt
 </pre>
